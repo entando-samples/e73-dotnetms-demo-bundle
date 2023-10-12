@@ -16,14 +16,14 @@ public class MyController : ControllerBase
 
     [HttpGet]
     [Route("hello")]
-    public string GetWeatherForecast()
+    public string GetHello()
     {
         return "Hello world!";
     }
     
     [HttpGet]
     [Route("health")]
-    public IActionResult Get()
+    public IActionResult GetHealth()
     {
         var myObject = new {
             Status = "UP"
